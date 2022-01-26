@@ -1,0 +1,349 @@
+ *{
+margin:0;
+padding:0;
+font-family: 'Dongle', sans-serif;
+
+ }
+
+ .header{
+
+   min-height:100vh;
+   width:100%;
+   background-image:linear-gradient(rgba(2,2,2,0.2),rgba(2,2,2,0.9)),url(Images/IMG-20170416-WA0214.jpg);
+  background-position: center;
+  background-size: cover;
+  position:relavite;
+
+ }
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav img{
+
+  width:150px;
+
+}
+
+.nav-links{
+  flex:1;
+  text-align: right;
+
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a{
+  color:#000000;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+.nav-links ul li::after{
+
+  content:'';
+  width:0%;
+  height:0px;
+  background:#fcfffe;
+  display:block;
+  margin:auto;
+  transition: 0s;
+
+}
+
+
+.nav-links ul li:hover::after{
+width:100%;
+
+}
+
+.text-box{
+  width:90%;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size:80px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 30px;
+  color:#fff;
+
+}
+
+.hero-btn{
+display:inline-block;
+text-decoration: none;
+color: #fff;
+border: 3px solid #fff;
+padding: 12px 34px;
+font-size: 25px;
+background: transparent;
+cursor: pointer;
+
+}
+
+.hero-btn:hover {
+
+  border:1px solid #2d48c2;
+  background: #2d48c2;
+  transition: 0.2s;
+
+}
+
+.hero-btn2{
+display:inline-block;
+text-decoration: none;
+color: #000000;
+border: 1px solid #fff;
+border-radius: 15px;
+padding: 5px 15px;
+font-size: 25px;
+background: transparent;
+cursor: pointer;
+
+}
+
+
+.hero-btn2:hover {
+
+  border:10px solid #ffffff;
+  background: #ffffff;
+  transition: 0.2s;
+
+}
+
+nav .fa{
+  display:none;
+}
+
+@media (max-width:700px) {
+  .text-box h1{
+    font-size:40px;
+  }
+
+  .nav-links{
+    position: absolute;
+    background: #2d48c2;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index:2;
+    transition: 1s;
+
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin:10px;
+    font-size:22px;
+    cursor:pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/*-------- editing the home page -------*/
+
+.home{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+p{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.home-extra{
+margin: 5%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.home-color{
+  flex-basis: 31%;
+  background: #416af0;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.boxTitle{
+color: #fff;
+font-size: 30px;
+text-align:center;
+font-weight: 600;
+margin: 10px 0;
+}
+
+.boxText{
+color: #fff;
+font-size: 20px;
+}
+
+.home-color:hover{
+  box-shadow: 0 0 15px 0px rgba(0,0,0,1.0);
+}
+
+@media (max-width:700px) {
+  .home-extra{
+    flex-direction: column;
+  }
+}
+
+
+
+/*--------------- LIFE JOURNEY-----------------*/
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.sub-header{
+
+  height:50vh;
+  width 100%;
+  background-image:linear-gradient(rgba(2,2,2,0.2),rgba(2,2,2,0.9)),url(Banner_Behind.JPG);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.sub-header h1{
+  margin-top: -300px;
+  font-size: 150px;
+}
+
+
+
+.row{
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.about-col{
+flex-basis: 80%;
+padding: 40px 30%;
+
+}
+
+.about-col img{
+  width: 100%;
+
+}
+
+.about-col h1{
+  padding-top: 0;
+}
+
+.about-col h2{
+  padding-top: 0;
+}
+
+.about-col p{
+  padding: 15px 0 25px;
+}
+
+.table{
+padding-left: : 200px;
+}
+th{
+  text-align: center;
+}
+
+.table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 50px;
+}
+
+
+th, td {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+
+
+
+.icons .fa{
+  color: #3060fc;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  display:inline-block;
+  text-decoration: none;
+
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 25px;
+  background: white;
+  cursor: pointer;
+
+  border:5px solid #ffffff;
+  background: #ffffff;
+  transition: 0.2s;
+
+
+}
+
+
+.header2{
+
+  height:100vh;
+  width 100%;
+  background-image:linear-gradient(rgba(2,2,2,0.2),rgba(2,2,2,0.9)),url(loading.JPG);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
